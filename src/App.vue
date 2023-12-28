@@ -27,4 +27,7 @@ export default {
     <Footer />
 </template>
 
-<style></style>
+<style lang="scss">
+// inclusion general.scss
+@use "./style/general.scss"
+</style>
