@@ -29,7 +29,10 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// call variables
+@use '../style/partials/variables' as *;
+
 footer {
     background-color: #303030;
 }
@@ -54,6 +57,6 @@ button {
 }
 
 h3 {
-    color: #0582F9;
+    color: $main-color;
 }
 </style>

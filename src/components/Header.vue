@@ -71,6 +71,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+// call variables
+@use '../style/partials/variables' as *;
+
 .container {
     display: flex;
     align-items: center;
@@ -80,7 +83,6 @@ export default {
 .logo {
     width: 50%;
 }
-
 
 ul {
     list-style-type: none;
@@ -94,6 +96,6 @@ a {
 }
 
 .active {
-    color: #0E7CEB;
+    color: $main-color;
 }
 </style>

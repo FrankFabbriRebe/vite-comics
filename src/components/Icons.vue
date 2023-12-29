@@ -46,9 +46,12 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// call variables
+@use '../style/partials/variables' as *;
+
 .icons {
-    background-color: #0582F9;
+    background-color: $main-color;
 }
 
 .container {
