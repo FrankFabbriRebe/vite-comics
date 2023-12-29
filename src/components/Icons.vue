@@ -49,14 +49,15 @@ export default {
 <style lang="scss" scoped>
 // call variables
 @use '../style/partials/variables' as *;
+// call mixins
+@use '../style/partials/mixins' as *;
 
 .icons {
     background-color: $main-color;
 }
 
 .container {
-    padding: 10px 50px;
-    display: flex;
+    @include container;
     justify-content: center;
 }
 

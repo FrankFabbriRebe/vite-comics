@@ -55,7 +55,10 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// call mixins
+@use '../style/partials/mixins' as *;
+
 .links {
     background-image: url('/imgs/footer-bg.jpg');
     color: white;
@@ -74,8 +77,7 @@ export default {
 }
 
 .container {
-    padding: 10px 50px;
-    display: flex;
+    @include container;
     gap: 100px;
 }
 

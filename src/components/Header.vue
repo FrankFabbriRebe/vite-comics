@@ -73,11 +73,12 @@ export default {
 <style lang="scss" scoped>
 // call variables
 @use '../style/partials/variables' as *;
+// call mixins
+@use '../style/partials/mixins' as *;
 
 .container {
-    display: flex;
+    @include container;
     align-items: center;
-    padding: 10px 50px;
 }
 
 .logo {

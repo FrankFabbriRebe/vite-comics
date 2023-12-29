@@ -32,14 +32,16 @@ export default {
 <style lang="scss" scoped>
 // call variables
 @use '../style/partials/variables' as *;
+// call mixins
+@use '../style/partials/mixins' as *;
+
 
 footer {
     background-color: #303030;
 }
 
 .container {
-    padding: 10px 50px;
-    display: flex;
+    @include container;
     justify-content: space-between;
 }
 

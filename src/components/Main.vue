@@ -12,13 +12,16 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// call mixins
+@use '../style/partials/mixins' as *;
+
 main {
     background-color: black;
     color: white;
 }
 
 .container {
-    padding: 10px 50px;
+    @include container;
 }
 </style>
