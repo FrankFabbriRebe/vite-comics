@@ -173,7 +173,7 @@ export default {
 
         <div class="container">
 
-            <card v-for="(card, i) in cards" :key="i" />
+            <card v-for="(card, i) in cards" :key="i" :details="card" />
 
         </div>
     </main>
@@ -186,7 +186,6 @@ export default {
 main {
     background-color: black;
     color: white;
-
 }
 
 .container {
