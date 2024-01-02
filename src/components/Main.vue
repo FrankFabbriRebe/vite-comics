@@ -1,6 +1,13 @@
 <script>
+import Card from './Card.vue';
+
 export default {
-    name: "Main"
+    name: "Main",
+
+    components: {
+        Card,
+    }
+
 }
 </script>
 
@@ -9,8 +16,10 @@ export default {
         <div class="jumbotron">
 
         </div>
+
         <div class="container">
 
+            <card />
 
         </div>
     </main>
